@@ -3,66 +3,71 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Landing page</title>
+        <title>jadoo</title>
         <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
             rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         />
     </head>
     <body>
-        <!-- header content -->
-        <header class="container">
-            <img src="image/Logo.svg" alt="jadoo" />
-            <nav class="nav">
+        <header>
+            <!-- logo -->
+            <img src="/image/Logo.svg" alt="jadoo logo" />
+            <!-- navigation -->
+            <nav>
                 <ul>
-                    <li><a href="/" class="nav_link">Destination</a></li>
-                    <li><a href="/" class="nav_link">Hotels</a></li>
-                    <li><a href="/" class="nav_link">Flights</a></li>
-                    <li><a href="/" class="nav_link">Bookings</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#hotels">Hotels</a></li>
+                    <li><a href="#flights">Flights</a></li>
+                    <li><a href="bookings">Bookings</a></li>
                     <li><button>Login</button></li>
-                    <li><button class="border">Sign up</button></li>
+                    <!-- actions -->
                     <li>
-                        <select name="lang" id="lang">
-                            <option value="EN">EN</option>
-                            <option value="FR">FR</option>
+                        <button class="signup">Sign up</button>
+                    </li>
+                    <li>
+                        <select name="languages" id="languages">
+                            <option value="en">EN</option>
+                            <option value="fr">FR</option>
                         </select>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <img class="decore" src="image/Decore.svg" alt="decore header" />
-            <img class="ellipce" src="image/Ellipse.svg" alt="ellipce" />
-            <!-- hero section -->
+            <img class="decor" src="image/Decore.svg" alt="random decore" />
+            <img class="ellipse" src="image/Ellipse.svg" alt="random ellipse" />
             <section id="hero">
-                <!-- description -->
                 <div id="description">
                     <p>Best Destinations around the world</p>
-                    <h1>
-                        <span><img id="underline" src="image/" alt="line" /></span>Travel, enjoy and
-                        live a new and full life
-                    </h1>
+                    <h1>Travel, enjoy and live a new and full life</h1>
                     <p>
                         Built Wicket longer admire do barton vanity itself do in it. Preferred to
                         sportsmen it engrossed listening. Park gate sell they west hard for the.
                     </p>
-
-                    <div class="actions">
+                    <div class="cta">
                         <button class="main-button secondary">Find out more</button>
                         <button>
-                            <span class="rounded primary">
-                                <span class="solar--play-bold"></span>
-                            </span>
+                            <span class="primary rounded-button"
+                                ><span class="line-md--play-filled"></span
+                            ></span>
                             Play Demo
                         </button>
                     </div>
                 </div>
-                <div><img src="image/Image.png" alt="image" /></div>
+
+                <img src="/image/Image.png" />
             </section>
-            <!-- Category section -->
+
+            <!-- services section -->
             <section id="services">
                 <div>
                     <h3>Category</h3>
@@ -71,38 +76,37 @@
                 <div class="services-list list">
                     <div class="service-card">
                         <img src="image/categ1.png" alt="" />
-                        <h3>Calculated Weather</h3>
+                        <h4>Calculated Weather</h4>
                         <p>Built Wicket longer admire do barton vanity itself do in it.</p>
                     </div>
                     <div class="service-card">
                         <img src="image/categ2.png" alt="" />
-                        <h3>Best Flights</h3>
+                        <h4>Best Flights</h4>
                         <p>Engrossed listening. Park gate sell they west hard for the.</p>
                     </div>
                     <div class="service-card">
                         <img src="image/categ3.png" alt="" />
-                        <h3>Local Events</h3>
+                        <h4>Local Events</h4>
                         <p>Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
                     </div>
                     <div class="service-card">
                         <img src="image/categ4.png" alt="" />
-                        <h3>Customization</h3>
+                        <h4>Customization</h4>
                         <p>We deliver outsourced aviation services for military customers</p>
                     </div>
                 </div>
-                <img class="rectangle" src="image" alt="" />
-                <img class="groupe" src="image/red categ.svg" alt="" />
+                <img class="rectangle" src="image/red categ.svg" alt="" />
+                <img class="groupe" src="image/++++++.svg" alt="" />
             </section>
-            <!-- destinatin section -->
             <section id="destinations">
                 <div>
-                    <h3>Top selling</h3>
-                    <h2>Top Destination</h2>
+                    <h3>Top Selling</h3>
+                    <h2>Top Destinations</h2>
                 </div>
                 <div class="list">
                     <!-- destination card -->
                     <div class="destination-card">
-                        <img src="image/Rectangle 14-1.png" alt="" />
+                        <img src="image/london.jpg" alt="" />
                         <!-- destination infos -->
                         <div class="destination-info">
                             <!-- localisation -->
@@ -110,13 +114,13 @@
                                 <p>Rome, Italy</p>
                                 <p>$5,25k</p>
                             </div>
-                            <p><span class="tabler--location-filled"></span> 10 Days Trip</p>
+                            <p><span class="iconamoon--location-fill"></span> 10 Days Trip</p>
                         </div>
                     </div>
 
                     <!-- destination card -->
                     <div class="destination-card">
-                        <img src="image/Rectangle 14.jpg" alt="" />
+                        <img src="image/rome.png" alt="" />
                         <!-- destination infos -->
                         <div class="destination-info">
                             <!-- localisation -->
@@ -124,7 +128,7 @@
                                 <p>Rome, Italy</p>
                                 <p>$5,25k</p>
                             </div>
-                            <p><span class="tabler--location-filled"></span> 10 Days Trip</p>
+                            <p><span class="iconamoon--location-fill"></span> 10 Days Trip</p>
                         </div>
                     </div>
 
@@ -138,77 +142,128 @@
                                 <p>Rome, Italy</p>
                                 <p>$5,25k</p>
                             </div>
-                            <p><span class="tabler--location-filled"></span> 10 Days Trip</p>
+                            <p><span class="iconamoon--location-fill"></span> 10 Days Trip</p>
                         </div>
                     </div>
                 </div>
-                <img class="khalouta" src="image/roller.svg" alt="" />
+                <img class="khalouta" src="image/khalouta.png" alt="" />
             </section>
-            <!-- booking -->
-        <section class="list" id="booking">
-          <div class="booking-desc">
-              <p>Easy and Fast</p>
-              <h2>Book your next trip in 3 easy steps</h2>
-              <div class="booking-steps">
-                  <div class="booking-card">
-                      <img src="images/destination.svg" alt="" />
-                      <div>
-                          <h3>Choose Destination</h3>
-                          <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
-                              tortor tempus.
-                          </p>
-                      </div>
-                  </div>
-                  <div>
-                      <div class="booking-card">
-                          <img src="images/payment.svg" alt="" />
-                          <div>
-                              <h3>Make Payment</h3>
-                              <p>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Urna, tortor tempus.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div>
-                      <div class="booking-card">
-                          <img src="images/airport.svg" alt="" />
-                          <div>
-                              <h3>Reach Airport on Selected Date</h3>
-                              <p>
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                  Urna, tortor tempus.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div><img src="image/Image.png" alt="booking image" /></div>
-      </section>
-       <!--  testimonials section -->
-       <section class="list" id="testimonials">
-        <div>
-          <h3>Testimonials</h3>
-          <h2>What people say about Us.</h2>
-        </div>
-
-        <div><img src="image/testimon.svg" alt="testimonials image" /></div>
-    </section>
-    <!-- newslatter section -->
-    <section id="newslatter">
-       <div>
-        <p>Subscribe to get information, latest news and other
-          interesting offers about Jadoo</p>
-          <form action=""> 
-            <input name="email" id="email" type="email">
-            <input class="main-button primary" type="submit">
-          </form>
-       </div>
-    </section>
-
+            <section class="list" id="booking">
+                <div class="booking-desc">
+                    <p>Easy and Fast</p>
+                    <h2>Book your next trip in 3 easy steps</h2>
+                    <div class="booking-steps">
+                        <div class="booking-card">
+                            <img src="images/destination.svg" alt="" />
+                            <div>
+                                <h3>Choose Destination</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                                    tortor tempus.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="booking-card">
+                                <img src="images/payment.svg" alt="" />
+                                <div>
+                                    <h3>Make Payment</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Urna, tortor tempus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="booking-card">
+                                <img src="image/airport.svg" alt="" />
+                                <div>
+                                    <h3>Reach Airport on Selected Date</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Urna, tortor tempus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div><img src="image/Image.svg" alt="booking image" /></div>
+            </section>
+            <section class="list" id="testemonials">
+                <div>
+                    <p>Testimonials</p>
+                    <h2>What people say about Us.</h2>
+                </div>
+                <div><img src="image/testemon.svg" alt="testemonials image" /></div>
+            </section>
+            <section id="newsletter">
+                <div>
+                    <p>
+                        Subscribe to get information, latest news and other interesting offers about
+                        Jadoo
+                    </p>
+                    <form action="">
+                        <input name="email" id="email" type="email" placeholder="Your Email" />
+                        <input class="main-button primary" type="submit" value="Subscribe" />
+                    </form>
+                </div>
+            </section>
         </main>
     </body>
+    <footer class="footer">
+        <div>
+            <img src="image/Jadoo..svg" alt="" width="120">
+            <p>Book your trip in minute, get full
+                control for much longer.</p></div>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Mobile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#">Help / FAQ</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="#">Airline fees</a></li>
+                        <li><a href="#">Airline</a></li>
+                        <li><a href="#">Low fare tips</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div><h5>Discover our app</h5></div>
+                    <div class="footer-png">
+                        <a href="#!">
+                            <img src="image/Google-Play.svg" alt="play store" width="80"
+                        /></a>
+
+                        <a href="#!">
+                            <img src="image/apple-store.png" alt="apple store" width="80"
+                        /></a>
+                    </div>
+                    <div class="footer-copy">
+                        <p class="mb-0 text-secondary fs--1 fw-medium">All rights reserved@jadoo.co </p>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </html>
